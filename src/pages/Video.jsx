@@ -19,6 +19,9 @@ const Container = styled.div`
   display: flex;
   gap: 24px;
   padding: 10px;
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 const Content = styled.div`
   flex: 5;
@@ -32,6 +35,9 @@ const Title = styled.h2`
 const Details = styled.div`
   display: flex;
   justify-content: space-between;
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 const Info = styled.span``;
 const Button = styled.button`
@@ -55,11 +61,17 @@ const Subscribe = styled.button`
   border-radius: 20px;
   background-color: ${({ theme }) => theme.SubscribeBgColor};
   color: ${({ theme }) => theme.SubscribeColor};
+   @media (max-width: 768px) {
+    padding: 10px 10px;
+  }
 `;
 const Buttons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+   @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 const Channel = styled.div`
   display: flex;
