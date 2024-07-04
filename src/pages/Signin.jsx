@@ -178,9 +178,9 @@ const Signin = () => {
           </InputGroup>
         </form>
         <p>or</p>
-        <GoogleButton onClick={signInWithGoogle}>
+{/*         <GoogleButton onClick={signInWithGoogle}>
           Signin with Google
-        </GoogleButton>
+        </GoogleButton> */}
         <form onSubmit={handleSignup}>
           <InputGroup>
             <Input
