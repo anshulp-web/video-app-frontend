@@ -131,6 +131,7 @@ const Menu = ({ darkMode, setdarkMode, responsive, setResponsive }) => {
               &nbsp;Explore
             </Item>
           </Link>
+           <Hr />
           {user ? (
             <>
               <Link to="/subscriptions" onClick={() => setResponsive(false)}>
