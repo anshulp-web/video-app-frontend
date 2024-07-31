@@ -19,7 +19,7 @@ const Container = styled.div`
   display: flex;
   gap: 24px;
   padding: 10px;
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
   }
 `;
@@ -35,7 +35,7 @@ const Title = styled.h2`
 const Details = styled.div`
   display: flex;
   justify-content: space-between;
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
   }
 `;
@@ -61,7 +61,7 @@ const Subscribe = styled.button`
   border-radius: 20px;
   background-color: ${({ theme }) => theme.SubscribeBgColor};
   color: ${({ theme }) => theme.SubscribeColor};
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 10px 10px;
   }
 `;
@@ -69,7 +69,7 @@ const Buttons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
   }
 `;
@@ -225,12 +225,12 @@ const Video = () => {
               )}{' '}
               Dislike
             </Button>
-            <Button>
+            {/* <Button>
               <ReplyOutlinedIcon /> Share
             </Button>
             <Button>
               <AddTaskOutlinedIcon /> Save
-            </Button>
+            </Button> */}
           </Buttons>
         </Details>
 
