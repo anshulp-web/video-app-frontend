@@ -119,13 +119,13 @@ const Menu = ({ darkMode, setdarkMode, responsive, setResponsive }) => {
             </LogoWrapper>
           </Logo>
 
-          <Link to="/">
+          <Link to="/" onClick={() => setResponsive(false)}>
             <Item>
               <HomeIcon />
               &nbsp;Home
             </Item>
           </Link>
-          <Link to="/trends">
+          <Link to="/trends" onClick={() => setResponsive(false)}>
             <Item>
               <ExploreOutlinedIcon />
               &nbsp;Explore
@@ -133,7 +133,7 @@ const Menu = ({ darkMode, setdarkMode, responsive, setResponsive }) => {
           </Link>
           {user ? (
             <>
-              <Link to="/subscriptions">
+              <Link to="/subscriptions" onClick={() => setResponsive(false)}>
                 <Item>
                   <SubscriptionsOutlinedIcon />
                   &nbsp;Subscriptions
@@ -145,15 +145,15 @@ const Menu = ({ darkMode, setdarkMode, responsive, setResponsive }) => {
             ''
           )}
 
-          <Item>
+          {/* <Item>
             <VideoLibraryOutlinedIcon />
             &nbsp;Library
           </Item>
           <Item>
             <HistoryOutlinedIcon />
             &nbsp;History
-          </Item>
-          <Hr />
+          </Item> */}
+          {/* <Hr /> */}
           {user ? (
             <Btn onClick={handlelogout}>
               <AccountCircleOutlinedIcon />
@@ -163,7 +163,7 @@ const Menu = ({ darkMode, setdarkMode, responsive, setResponsive }) => {
             <>
               <Login>
                 <Title>Sign in to like,subscribe and comment</Title>
-                <Link to="/signin">
+                <Link to="/signin" onClick={() => setResponsive(false)}>
                   <Btn>
                     <AccountCircleOutlinedIcon />
                     &nbsp;SIGN IN
@@ -173,7 +173,7 @@ const Menu = ({ darkMode, setdarkMode, responsive, setResponsive }) => {
             </>
           )}
           <Hr />
-          <Item>
+          {/* <Item>
             <LibraryMusicOutlinedIcon />
             &nbsp;Music
           </Item>
@@ -209,7 +209,7 @@ const Menu = ({ darkMode, setdarkMode, responsive, setResponsive }) => {
           <Item>
             <HelpOutlineOutlinedIcon />
             &nbsp;Help
-          </Item>
+          </Item> */}
           <Item onClick={() => setdarkMode(!darkMode)}>
             <SettingsBrightnessOutlinedIcon />
             &nbsp;{darkMode ? 'Light Mode' : 'Dark Mode'}
